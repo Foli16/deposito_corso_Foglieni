@@ -16,45 +16,45 @@ class Program
     public static readonly string soloLettura = "sono letto";
     static void Main(string[] args)
     {
-        // Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello, World!");
 
-        // int counter;
-        // counter = 100;
-        // var nome = "var";
+        int counter;
+        counter = 100;
+        var nome = "var";
 
-        // Console.WriteLine(counter + " " + nome);
+        Console.WriteLine(counter + " " + nome);
 
-        // string s = "stringa poco politicamente corretta";
+        string s = "stringa poco politicamente corretta";
 
-        // Console.WriteLine(s);
+        Console.WriteLine(s);
 
-        // int numero = 10;                        //numero intero
-        // float decimaleFloat = 3.14f;            //numero a virgola mobile
-        // double decimaleDouble = 3.14d;          //numero a virgola mobile
-        // char lettera = 'a';                     //singolo carattere
-        // bool condizione = true;                 //bit 0 (false) o 1 (true)
-        // string saluto = "Ciao a tutti rugoni!"; //molteplici char
+        int numero = 10;                        //numero intero
+        float decimaleFloat = 3.14f;            //numero a virgola mobile
+        double decimaleDouble = 3.14d;          //numero a virgola mobile
+        char lettera = 'a';                     //singolo carattere
+        bool condizione = true;                 //bit 0 (false) o 1 (true)
+        string saluto = "Ciao a tutti rugoni!"; //molteplici char
 
-        // Console.WriteLine("Numero: "+numero);
-        // Console.WriteLine("Decimale: "+decimaleDouble + " oppure "+decimaleFloat);
-        // Console.WriteLine("Lettera: "+lettera);
-        // Console.WriteLine("Condizione: "+condizione);
-        // Console.WriteLine("Saluto: "+saluto);
+        Console.WriteLine("Numero: "+numero);
+        Console.WriteLine("Decimale: "+decimaleDouble + " oppure "+decimaleFloat);
+        Console.WriteLine("Lettera: "+lettera);
+        Console.WriteLine("Condizione: "+condizione);
+        Console.WriteLine("Saluto: "+saluto);
 
         
-        // Console.WriteLine("Ecco la costante: "+COSTANTE);
-        // Console.WriteLine("Ecco la readonly: "+soloLettura);
+        Console.WriteLine("Ecco la costante: "+COSTANTE);
+        Console.WriteLine("Ecco la readonly: "+soloLettura);
         
-        // //Casting implicito (safe, nessuna perdita di dati)
-        // int intero = 42;                        
-        // float numeroLunghissimo = intero+0.6f;       //widening - da più piccolo a più grande
+        //Casting implicito (safe, nessuna perdita di dati)
+        int intero = 42;                        
+        float numeroLunghissimo = intero+0.6f;       //widening - da più piccolo a più grande
 
-        // //Casting esplicito (potenziale perdita / eccezione)
-        // float pi = 3.14f;
-        // int piTroncato = (int)pi;               //narrowing - dal più grande al più piccolo
+        //Casting esplicito (potenziale perdita / eccezione)
+        float pi = 3.14f;
+        int piTroncato = (int)pi;               //narrowing - dal più grande al più piccolo
 
-        // Console.WriteLine("Cast implicito: " + numeroLunghissimo);
-        // Console.WriteLine("Cast esplicito: " + piTroncato);
+        Console.WriteLine("Cast implicito: " + numeroLunghissimo);
+        Console.WriteLine("Cast esplicito: " + piTroncato);
 
         // Console.Write("Come ti chiami? ");
         // string nome2 = Console.ReadLine();
