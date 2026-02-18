@@ -10,10 +10,9 @@ class Program
         Console.Write("Password: ");
         string passwordR = Console.ReadLine()!;
 
-        Console.WriteLine("--Login--");
-        string answer;
         do
         {
+            Console.WriteLine("\n--Login--");
             Console.Write("Nome utente: ");
             string usernameL = Console.ReadLine()!;
             Console.Write("Password: ");
@@ -21,21 +20,37 @@ class Program
 
             if(usernameL == usernameR && passwordL == passwordR)
             {
-                Console.WriteLine("Login effettuato!");
-                Console.WriteLine("Vuoi far partire il nostro fantastico conto alla rovescia? (y/n)");
-                string reply = Console.ReadLine()!;
-                if(reply == "y")
-                    Console.WriteLine("Quanto deve essere lungo? Dammi un numero intero");
-                    
+                bool logged = true;
 
-                for (int i = 10; i > 0; i--)
+                Console.WriteLine("\nLogin effettuato!");
+
+                while(logged)
                 {
-                    Console.WriteLine($"Conto alla rovescia: {i}");
+                    Console.WriteLine("\nCosa vorresti fare ora?\n\t- Fai partire il countdown -c\n\t- Effettua il logout -o");
+                    switch(Console.ReadLine())
+                    {
+                        case "c":
+                            Console.WriteLine("\nQuanto deve durare? Dammi un numero intero");
+                            for (int i = int.Parse(Console.ReadLine()!); i > 0; i--)
+                                Console.WriteLine($"Conto alla rovescia: {i}");
+                            Console.WriteLine("BOOM!");
+                            break;
+                        case "o":
+                            logged = false;
+                            Console.WriteLine("Logout effettuato.");
+                            break;
+                        default:
+                            Console.WriteLine("Comando non valido.");
+                            break;
+                    }
                 }
             }
+            else
+                Console.WriteLine("\nNome utente o password errati!");
 
-            Console.WriteLine("Vuoi riprovare? (y/n)");
-            answer = Console.ReadLine()!;
-        }while(answer == "y");
+            Console.WriteLine("\nVuoi rifare il login? (y/n)");
+        } while(Console.ReadLine() == "y");
+
+        Console.WriteLine("\nProgramma terminato.");
     }
 }
